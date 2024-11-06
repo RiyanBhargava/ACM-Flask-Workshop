@@ -1,0 +1,55 @@
+site_name: ACM FLASK WORKSHOP
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  logo: "assets/ACM_Logo.png"
+  language: en
+
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: blue      # Matches ACM logo primary color
+      accent: cyan       # Accent color to complement the primary
+      background: "#FFFFFF"
+      text: "#003366"      # Dark blue for readability
+      secondary_background: "#F0F4F8"
+
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: blue
+      accent: light-blue  # Slightly lighter blue for accents
+      background: "#121212"
+      text: "#FFFFFF"      # White text for readability
+      secondary_background: "#1E1E1E"
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
